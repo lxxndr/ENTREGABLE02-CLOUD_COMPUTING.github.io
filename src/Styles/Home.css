@@ -1,0 +1,145 @@
+@import url('https://fonts.googleapis.com/css2?family=Ubuntu:wght@300&display=swap'); /*Inporta la fuente que usaremos en la pagina*/
+
+.home {
+    font-family: 'Ubuntu'; /*Todo el contenido dentro del container home tendra esta fuente */
+}
+
+.secc-home{
+    background-image: url('../Img//senati-bakground.jpg'); /*Añadira una imagen de fondo*/
+    width: 100vh; /*Ancho de la imagen del 100%*/
+    height: 100vh; /*Alto de la imagen del 100%*/
+    background-size: cover; /*Especifica el tamaño de las imágenes de fondo.*/
+    background-position: center; /*Posición de la imagen*/ 
+}
+
+.formulario {
+    display: flex; /*Coloca los container como si fueran celdas de tablas, con un comportamiento predecible y adaptable.*/
+    flex-direction: column; /*Hace que estes esten en formato de columna*/
+    border-radius: 10px; /*Le da un borde circular al formulario*/
+    background-color: rgb(158, 171, 183); /*Le da color al container del formulario*/
+    opacity: 90%; /*Transparenta el container*/
+}
+
+.formulario>h1 {
+    font-weight: 700; /*Hace que el h1 tenga un formato en negrita*/
+}
+
+input {
+    outline: none; /* Hace que este input no tenga bordes al presionarlo*/
+    border-radius: 20px;/*Le da un borde circular al input*/
+    padding-left: 12px; /*Hace que tenga un espaciado del lado izquierdo en el input*/
+    border: none; /*Quita los bordes del input*/
+    color: black; /*Color del texto ingresado*/
+    font-weight: bold; /*Hace que el h1 tenga un formato en negrita*/
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+    -webkit-appearance: none;
+    margin: 0; /*Quita los botones predeterminados del input de tipo numerico*/
+}
+
+
+.formulario>label {
+    text-align: left; /*Hace que el label se posicione en el lado izquierdo*/
+}
+
+.enviar {
+    height: 40px; /*El boton tendra una altura de 40px*/
+    border: none; /*El boton no tendra bordes*/
+    background-color: beige; /*Color del boton*/
+    border-radius: 20px; /*Dar bordes redondeados al boton*/
+    font-weight: 700; /*Hace que el texto tenga un formato en negrita*/
+
+}
+
+.enviar:hover {
+    background-color: aqua; /*Al pasar o presionar el boton este tendra otro color*/
+}
+
+.borde {
+    border: 2px solid #ffffff;
+    width: 100%;
+}
+
+.datos-credencial {
+    display: flex;
+    flex-direction: column;
+}
+
+.header-credencial>h1 {
+    font-size: 25px;
+}
+
+.datos-credencial>h1 {
+    font-size: 20px;
+}
+
+.user {
+    width: 140px;
+    height: 140px;
+}
+
+.foto {
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.datos {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.hora {
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hora>h1 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+.credencial>.hora {
+    margin-top: 14%;
+}
+
+.hora-minuto {
+    font-size: 35px;
+    font-weight: bold;
+}
+
+.fecha {
+    font-size: 15px;
+    text-align: center;
+}
+
+.icon {
+    width: 30px;
+    height: 30px;
+}
+
+.icon:hover {
+    background-color: rgb(181, 174, 255);
+    border-radius: 20px;
+}
+
+.mi-modal::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+}
+
+.secc-dni>a{
+    text-decoration: none;
+}
